@@ -130,7 +130,7 @@ position: relative;
 height: 650px;
 background-color:#fcfaf8;
 }
-
+​
 </style>
 </head>
 
@@ -147,6 +147,8 @@ background-color:#fcfaf8;
 <body>
 
 
+
+
 <div id="tweet">
 <div id="topbar" align="right"><div class="inner"><p class="right">Facebook Twitter Google+</p></div></div>
 <div id="white" align="right"><div class="inner2"><a href="">Download</a> | <a href="#found">FAQ</a> | <a href="#about">About Me</a></div></div>
@@ -159,8 +161,7 @@ background-color:#fcfaf8;
 <div id="b"><div><a name="#found">info about languages and @user</a></div></div>
 <div id="bshad"></div>
 <div id="parker"><a name="#about">My</a> name is Pat. This photo is me and my girlfriend Aiyi. We would both like to thank you so much for donating. I don't work for a big software company. We're just two people - so your donations really add up, and make a huge difference in our lives. I made tweet2X for fun, so I'm really happy I can afford to continue improving and updating it, thanks to you.</div>
-</div>
-
+</div>​
 
 
 
@@ -214,12 +215,6 @@ background-color:#fcfaf8;
 
 
 
-
-
-
-
-
-function scroll(){
     /*Animated scroll for anchorlinks*/
     var anchor = '',
         pageOffset = '',
@@ -231,7 +226,7 @@ function scroll(){
             anchor = $(this).attr('href');
             pageOffset = $("a[name='"+anchor+"']").offset();
             scrollPos = pageOffset.top - viewOffset
-            $('html, body').animate({scrollTop:scrollPos}, '500');    
+            $('html, body').animate({scrollTop:scrollPos}, '50');    
         });
     });​
 </script>
