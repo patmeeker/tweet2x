@@ -1,3 +1,5 @@
+
+
 <head>
 
 
@@ -21,6 +23,24 @@ $(function() {
         }, '50');
     });
 });
+
+function hideFA(){
+$('#rose').hide();
+$('#kevin').hide();
+$('#jack').show();
+}
+
+function hideDA(){
+$('#jack').hide();
+$('#kevin').hide();
+$('#rose').show();
+}
+
+function hideDF(){
+$('#jack').hide();
+$('#rose').hide();
+$('#kevin').show();
+}
 </script>
 
 
@@ -38,9 +58,6 @@ position:fixed;
 width: 100%;
 }
 
-p {
-margin: 30;
-}
 
 #topbar {
 width: 100%;
@@ -156,8 +173,8 @@ background:url(http://i.imgur.com/FepJ6.png);
 
 <body>
 <div id="tweet">
-<div id="topbar" align="right"><div class="inner"><p class="right">Facebook Twitter Google+</p></div></div>
-<div id="white" align="right"><div class="inner2"><a href="">Download</a> | <a href="#found">FAQ</a> | <a href="#about">About Me</a></div></div>
+<div id="topbar" align="right"><div class="inner"><p class="right extension">Facebook Twitter Google+</p></div></div>
+<div id="white" align="right"><div class="inner2"><a href="#download" onclick="hideFA()">Download</a> | <a href="#found" onclick="hideDA()">FAQ</a> | <a href="#about" onclick="hideDF()">About Me</a></div></div>
 <div id="whiteshadow"><img id="kevin" src="http://i.imgur.com/k5S95.png"><img id="rose" src="http://i.imgur.com/k5S95.png"><img id="jack" src="http://i.imgur.com/k5S95.png"></div>
 </div>
 
