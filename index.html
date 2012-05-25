@@ -1,73 +1,239 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tweet2x by patmeeker</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Tweet2x</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/patmeeker/tweet2x">View the Project on GitHub <small>patmeeker/tweet2x</small></a></p>
-        <ul>
-          <li><a href="https://github.com/patmeeker/tweet2x/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/patmeeker/tweet2x/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/patmeeker/tweet2x">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<style>
+* { margin: 0; padding: 0; font-family:Arial, Helvetica, sans-serif}
 
-<h3>Rather Drive Stick?</h3>
+body {
+    margin: 0;
+    padding: 0;
+}
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+#tweet {
+position:fixed;
+width: 100%;
+}
 
-<h3>Authors and Contributors</h3>
+p {
+margin: 30;
+}
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+#topbar {
+width: 100%;
+height: 32px;
+ margin: 0;
+background-color:#b0c4de;
+color: white;
+}
 
-<h3>Support or Contact</h3>
+#white {
+width: 100%;
+height: 76px;
+ margin: 0;
+background-color:#ffffff;
+}
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/patmeeker">patmeeker</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-31993805-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+#whiteshadow {
+z-index: 4;
+width: 100%;
+height: 32px;
+ background:url(images/hack.png); 
+}
 
-  </body>
+#kevin {
+position: absolute;
+right: 140px;
+bottom: -6px;
+}
+
+#rose {
+position: absolute;
+right: 200px;
+bottom: -6px;
+}
+
+#jack {
+position: absolute;
+right: 264px;
+bottom: -6px;
+}
+
+#twitter {
+z-index: -55;
+width: 100%;
+height: 1700px;
+ margin: 0;
+   position: relative;
+    top: 0;
+}
+
+#noise {
+z-index: -55;
+width: 100%;
+height: 700px;
+ margin: 0;
+   position: relative;
+    top: 0;
+ background:url(images/noise1.png); 
+}
+
+#tshad {
+z-index: 4;
+width: 100%;
+height: 22px;
+ background:url(images/tshad.png); 
+}
+
+#b {
+z-index: 4;
+width: 100%;
+height: 602px;
+ background:url(images/b.png); 
+}
+
+#bshad {
+z-index: 4;
+width: 100%;
+height: 32px;
+
+ background:url(images/bshad.png); 
+}
+
+.inner {
+position: relative;
+right: 136px;
+top: 8px;
+}
+
+.inner2 {
+position: relative;
+right: 136px;
+top: 38px;
+}
+
+#extension {
+position: relative;
+right: 136px;
+top: 308px;
+}
+
+#parker {
+position: relative;
+height: 650px;
+background-color:#fcfaf8;
+}
+
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+<div id="tweet">
+<div id="topbar" align="right"><div class="inner"><p class="right">Facebook Twitter Google+</p></div></div>
+<div id="white" align="right"><div class="inner2"><a href="">Download</a> | <a href="#found">FAQ</a> | <a href="#about">About Me</a></div></div>
+<div id="whiteshadow"><img id="kevin" src="images/kevin.png"><img id="rose" src="images/rose.png"><img id="jack" src="images/jack.png"></div>
+</div>
+
+<div id="twitter" class="ttx">
+<div id="noise"><div id="extension" align="center">Video & DL info here..."</div></div>
+<div id="tshad"></div>
+<div id="b"><div><a name="#found">info about languages and @user</a></div></div>
+<div id="bshad"></div>
+<div id="parker"><a name="#about">My</a> name is Pat. This photo is me and my girlfriend Aiyi. We would both like to thank you so much for donating. I don't work for a big software company. We're just two people - so your donations really add up, and make a huge difference in our lives. I made tweet2X for fun, so I'm really happy I can afford to continue improving and updating it, thanks to you.</div>
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+function scroll(){
+    /*Animated scroll for anchorlinks*/
+    var anchor = '',
+        pageOffset = '',
+        viewOffset = 30,
+        scrollPos = '';
+    $(function() {
+        $("a[href*='#']").click(function(e) {
+            e.preventDefault();
+            anchor = $(this).attr('href');
+            pageOffset = $("a[name='"+anchor+"']").offset();
+            scrollPos = pageOffset.top - viewOffset
+            $('html, body').animate({scrollTop:scrollPos}, '500');    
+        });
+    });​
+</script>
+
+
