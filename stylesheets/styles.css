@@ -189,5 +189,5 @@ top: 0;
 
 #fbbtn {
 	
-	float: left;
+	display: inline-block;
 }
