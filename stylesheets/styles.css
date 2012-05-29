@@ -187,7 +187,7 @@ top: 0;
 	top: -4px;
 }
 
-#fbbtn {
-	
-	display: inline-block;
+iframe {
+	position: relative;
+	top:-3px;
 }
