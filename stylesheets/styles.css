@@ -12,15 +12,10 @@ color: #665950;
     padding: 0;
 }
 
-#logoCont {
-	position: fixed;
-	top:7;
-	width: 80%;
-	z-index:5;
-}
+
 
 #logo {
-position: relative;
+position: fixed;
 top: 7;
 right: 140;
 z-index: 5;
