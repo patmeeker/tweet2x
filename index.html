@@ -1,202 +1,32 @@
 
 
 <head>
-
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="javascripts/scale.fix.js"></script>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=127702313984818&amp;xfbml=1"></script>
 
-<script ype="text/javascript">
-
-var anchor = '',
-    pageOffset = '',
-    viewOffset = 30,
-    scrollPos = '';
-$(function() {
-    $("a[href*='#']").click(function(e) {
-        e.preventDefault();
-        anchor = $(this).attr('href');
-        pageOffset = $("a[name='" + anchor + "']").offset();
-        scrollPos = pageOffset.top - viewOffset
-        $('html, body').animate({
-            scrollTop: scrollPos
-        }, '50');
-    });
-});
-
-function hideFA(){
-$('#rose').hide();
-$('#kevin').hide();
-$('#jack').show();
-}
-
-function hideDA(){
-$('#jack').hide();
-$('#kevin').hide();
-$('#rose').show();
-}
-
-function hideDF(){
-$('#jack').hide();
-$('#rose').hide();
-$('#kevin').show();
-}
-</script>
-
-
-<style>
-
-
-* { margin: 0; padding: 0; font-family:Arial, Helvetica, sans-serif}
-
-a {
-text-decoration: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#logo {
-position: fixed;
-top: 12;
-right: 140;
-z-index: 5;
-}
-
-#tweet {
-position:fixed;
-width: 100%;
-}
-
-
-#topbar {
-width: 100%;
-height: 32px;
- margin: 0;
-background-color:#ffc700;
-color: white;
-}
-
-#white {
-width: 100%;
-height: 71px;
- margin: 0;
-background-color:#ffffff;
-}
-
-#whiteshadow {
-z-index: 4;
-width: 100%;
-height: 32px;
- background:url(http://i.imgur.com/BeNtu.png); 
-}
-
-#kevin {
-position: absolute;
-left: 140px;
-bottom: -6px;
-}
-
-#rose {
-position: absolute;
-left: 200px;
-bottom: -6px;
-}
-
-#jack {
-position: absolute;
-left: 264px;
-bottom: -6px;
-}
-
-#twitter {
-z-index: -55;
-width: 100%;
-height: 1700px;
- margin: 0;
-   position: relative;
-    top: 0;
-}
-
-#noise {
-z-index: -55;
-width: 100%;
-height: 700px;
- margin: 0;
-   position: relative;
-    top: 0;
- background:url(http://i.imgur.com/zsqti.png); 
-}
-
-#tshad {
-z-index: 4;
-width: 100%;
-height: 22px;
- background:url(http://i.imgur.com/mVS5j.png); 
-}
-
-#b {
-z-index: 4;
-width: 100%;
-height: 602px;
- background:url(http://i.imgur.com/Wn5vs.png); 
-}
-
-#bshad {
-z-index: 4;
-width: 100%;
-height: 32px;
-
- background:url(http://i.imgur.com/qdhEe.png); 
-}
-
-.inner {
-position: relative;
-left: 136px;
-top: 8px;
-}
-
-.inner2 {
-position: relative;
-left: 136px;
-top: 38px;
-}
-
-#extension {
-position: relative;
-right: 136px;
-top: 308px;
-}
-
-#parker {
-position: relative;
-height: 650px;
-background:url(http://i.imgur.com/FepJ6.png);
-}
-
-
-
-</style>
 </head>
 
 
 
 <body>
+<div id="fb-root"></div>
+
+
+
 <div id="logo"><img src="http://i.imgur.com/bZNEB.png"></div>
 <div id="tweet">
-<div id="topbar" align="left"><div class="inner"><p>Facebook Twitter Google+</p></div></div>
-<div id="white" align="left"><div class="inner2"><a href="#download" onclick="hideFA()">Download</a> | <a href="#found" onclick="hideDA()">FAQ</a> | <a href="#about" onclick="hideDF()">About Me</a></div></div>
+<div id="topbar" align="left"><div class="inner"><p><fb:like href="http://patmeeker.github.com/tweet2x/" data-layout="button_count" send="false" width="450" show_faces="false" font=""></fb:like> Twitter Google+</p></div></div>
+<div id="white" align="left"><div class="inner2"><h1><a href="#download" onclick="hideFA()">Download</a> | <a href="#faq" onclick="hideDA()">FAQ</a> | <a href="#about" onclick="hideDF()">About Me</a></h1></div></div>
 <div id="whiteshadow"><img id="kevin" src="http://i.imgur.com/k5S95.png"><img id="rose" src="http://i.imgur.com/k5S95.png"><img id="jack" src="http://i.imgur.com/k5S95.png"></div>
 </div>
-
 <div id="twitter" class="ttx">
-<div id="noise"><div id="extension" align="center">Video & DL info here..."</div></div>
-<div id="tshad"></div>
-<div id="b"><div><a name="#found">info about languages and @user</a></div></div>
-<div id="bshad"></div>
-<div id="parker"><a name="#about">My</a> name is Pat. This photo is me and my girlfriend Aiyi. We would both like to thank you so much for donating. I don't work for a big software company. We're just two people - so your donations really add up, and make a huge difference in our lives. I made tweet2X for fun, so I'm really happy I can afford to continue improving and updating it, thanks to you.</div>
-</div>
+<div id="noise"><div id="extension" align="center"><a name="#download"><img src="http://i.imgur.com/010Yx.png"></div></div></a>
+
+<div align="center"  id="b"><div align="left"  class="inner3"><h2><a name="#faq"></a>Languages other than english?</h2> <h3>Tweet2X only supports English and basic punctuation. But I plan to add support for other languages in the future. If that would be useful to you, you can tweet @patmeeker, and let me know which language to work on first. And I'll take the most popular suggestion.<br><br>Browsers? Currently only for Chrome. But my next task will be to make a version for firefox.<br><br>How will we know when FF comes out? You can follow my personal account, patmeeker. Or if you just want updates and news about tweet@X, you and subscribe for email notifications.</h3></div></div>
+<div id="parker" align="center"><div class="inner3" align="left" ><img class="about" src="http://i.imgur.com/TPFiH.png"><p class="about"><h3><br><br><a name="#about"></a>My name is Pat. This is a photo of me and my girlfriend, Aiyi. We'd both like to sincerely thank you for donating. We aren't a big software company. We're just two people - so your small donations really make a difference in our lives. I made tweet2X for fun, so I'm really happy I can afford to continue improving and updating it, thanks to you.</h3></p></div>
+</div></div>
+<div></div>
 </body>
 </html>
