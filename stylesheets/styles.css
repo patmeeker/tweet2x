@@ -184,5 +184,6 @@ top: 0;
 
 .twitter-share-button {
 	position: fixed;
-	top: 3px;
+	top: 5px;
+	left: 72px;
 }
