@@ -189,5 +189,6 @@ top: 0;
 
 iframe {
 	position: relative;
-	top:-13px;
+	top:-7px;
+	left: 2px;
 }
