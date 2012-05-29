@@ -111,7 +111,7 @@ height: 32px;
 
 .inner {
 position: relative;
-left: 136px;
+width: 80%
 top: 8px;
 }
 
@@ -182,14 +182,3 @@ position: fixed;
 top: 0;
 }
 
-.twitter-share-button {
-	position: fixed;
-	top: 6px;
-	left: 102px;
-}
-
-g {
-	position: fixed;
-	top: 6px;
-	left: 177px;
-}
