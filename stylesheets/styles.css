@@ -1,4 +1,3 @@
-
 * { margin: 0; padding: 0; font-family:Arial, Helvetica, sans-serif}
 
 a {
@@ -11,6 +10,13 @@ color: #665950;
 	font: 14px/1.7413 "Helvetica Neue", Arial, Helvetica, sans-serif; 
     margin: 0;
     padding: 0;
+}
+
+#logoCont {
+	position: fixed;
+	top:7;
+	width: 80%;
+	z-index:5;
 }
 
 #logo {
