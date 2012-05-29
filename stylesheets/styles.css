@@ -188,6 +188,6 @@ top: 0;
 }
 
 #fbbtn {
-	position: relative;
-	top: 0px
+	
+	float: left;
 }
