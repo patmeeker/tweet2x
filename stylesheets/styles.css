@@ -182,3 +182,7 @@ position: fixed;
 top: 0;
 }
 
+.twitter-share-button {
+	position: relative;
+	top: 6px;
+}
