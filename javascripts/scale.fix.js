@@ -22,7 +22,7 @@ $(function() {
     $("a[href*='#']").click(function(e) {
         e.preventDefault();
         anchor = $(this).attr('href');
-  	if (anchor == "#download") {
+		if (anchor == "#download") {
 		    viewOffset = 600;
 			}
 			if (anchor == "#about") {
