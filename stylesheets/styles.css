@@ -20,7 +20,7 @@ color: #665950;
 }
 
 #logo {
-position: fixed;
+position: relative;
 top: 7;
 right: 140;
 z-index: 5;
