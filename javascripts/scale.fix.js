@@ -39,6 +39,19 @@ $(function() {
     });
 });
 
+$window.scroll(function() {
+    var scrollTop = $window.scrollTop();
+    if(scrollTop > 0 && scrollTop < 800) {
+        hideDF();
+    } else if(scrollTop > 800 && scrollTop < 1300) {
+        hideDA();
+    } else if(scrollTop > 1300 && scrollTop < 6300) {
+        hideFA();
+    }
+});​
+
+
+
 function hideDF(){
 $('#rose').hide();
 $('#kevin').hide();
