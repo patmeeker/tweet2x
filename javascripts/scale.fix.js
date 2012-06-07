@@ -59,7 +59,7 @@ $('#rose').hide();
 $('#kevin').show();
 }
 
-
+var $window = $(window);
 $window.scroll(function() {
     var scrollTop = $window.scrollTop();
     if(scrollTop > 0 && scrollTop < 800) {
