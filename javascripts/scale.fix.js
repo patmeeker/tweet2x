@@ -70,6 +70,7 @@ var ext = top1 + $("#extension").height();
 var top2 = $("#b").offset().top;
 var start2 = top2 - $window.height();
 var faq = top2 + $("#b").height();
+faq = faq-200;
 
 var top3 = faq - 150;
 console.log(top3);
@@ -81,7 +82,7 @@ hideFA();
 else if (posNow > ext && posNow < faq) {
 hideDA();	
 }
-else if (posNow > top3) {
+else if (posNow > faq) {
 hideDF();	
 }
 });
