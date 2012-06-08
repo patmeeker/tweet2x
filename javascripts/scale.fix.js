@@ -62,10 +62,13 @@ $('#kevin').show();
 $(document).scroll(function(){
 	var $window = $(window);
 var posNow = $window.scrollTop();
-if (posNow > 0 && posNow < 800) {
+if (posNow > 0 && posNow < 600) {
 hideFA();	
 }
-else if (posNow > 800 && posNow < 1300) {
+else if (posNow > 600 && posNow < 1000) {
 hideDA();	
+}
+else {
+hideDF();	
 }
 });
