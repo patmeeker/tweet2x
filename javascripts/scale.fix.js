@@ -72,6 +72,8 @@ var start2 = top2 - $window.height();
 var faq = top2 + $("#b").height();
 
 var top3 = faq - 150;
+console.log(top3);
+console.log(posNow);
 
 if (posNow > 0 && posNow < ext) {
 hideFA();	
