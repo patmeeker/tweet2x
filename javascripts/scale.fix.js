@@ -60,5 +60,5 @@ $('#kevin').show();
 }
 
 $(document).scroll(function(){
-alert("$window.scrollTop()");
+console.log($window.scrollTop());
 });
