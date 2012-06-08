@@ -63,6 +63,6 @@ $(document).scroll(function(){
 	var $window = $(window);
 console.log($window.scrollTop());
 if ($window > 0 && $window < 800) {
-function hideFA();	
+hideFA();	
 }
 });
