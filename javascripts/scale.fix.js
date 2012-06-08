@@ -71,9 +71,6 @@ var top2 = $("#b").offset().top;
 var start2 = top2 - $window.height();
 var faq = top2 + $("#b").height();
 
-var top3 = $("#parker").offset().top;
-var start3 = top3 - $window.height();
-var abt = top3 + $("#parker").height();
 
 if (posNow > 0 && posNow < ext) {
 hideFA();	
@@ -81,7 +78,7 @@ hideFA();
 else if (posNow > ext && posNow < faq) {
 hideDA();	
 }
-else if (posNow > faq && posNow < abt) {
+else if (posNow > faq) {
 hideDF();	
 }
 });
