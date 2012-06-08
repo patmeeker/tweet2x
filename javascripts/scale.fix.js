@@ -81,7 +81,7 @@ hideFA();
 else if (posNow > ext && posNow < faq) {
 hideDA();	
 }
-else if (posNow > faq && posNow < abt) {
+else if (posNow > top3) {
 hideDF();	
 }
 });
