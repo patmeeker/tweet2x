@@ -62,13 +62,26 @@ $('#kevin').show();
 $(document).scroll(function(){
 	var $window = $(window);
 var posNow = $window.scrollTop();
-if (posNow > 0 && posNow < 600) {
+
+var top1 = $("#extension").offset().top;
+var start1 = top1 - $window.height();
+var ext = top1 + $("#extension").height();
+
+var top2 = $("#b").offset().top;
+var start2 = top2 - $window.height();
+var faq = top2 + $("#b").height();
+
+var top3 = $("#parker").offset().top;
+var start3 = top3 - $window.height();
+var abt = top3 + $("#parker").height();
+
+if (posNow > 0 && posNow < ext) {
 hideFA();	
 }
-else if (posNow > 600 && posNow < 1000) {
+else if (posNow > ext && posNow < faq) {
 hideDA();	
 }
-else {
+else if (posNow > faq && posNow < abt) {
 hideDF();	
 }
 });
