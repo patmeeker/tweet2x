@@ -60,5 +60,6 @@ $('#kevin').show();
 }
 
 $(document).scroll(function(){
+	var $window = $(window);
 console.log($window.scrollTop());
 });
