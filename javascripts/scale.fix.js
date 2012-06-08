@@ -65,4 +65,7 @@ var posNow = $window.scrollTop();
 if (posNow > 0 && posNow < 800) {
 hideFA();	
 }
+else if (posNow > 800 && posNow < 1300) {
+hideDA();	
+}
 });
