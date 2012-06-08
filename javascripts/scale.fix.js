@@ -61,8 +61,8 @@ $('#kevin').show();
 
 $(document).scroll(function(){
 	var $window = $(window);
-console.log($window.scrollTop());
-if ($window > 0) {
+var posNow = $window.scrollTop();
+if (posNow > 0) {
 hideFA();	
 }
 });
