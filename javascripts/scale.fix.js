@@ -60,9 +60,9 @@ $('#kevin').show();
 }
 
 $(document).scroll(function(){
-	var uindow = $(window);
+	var $window = $(window);
 console.log($window.scrollTop());
-if (uindow > 0 && uindow < 800) {
+if ($window > 0) {
 hideFA();	
 }
 });
