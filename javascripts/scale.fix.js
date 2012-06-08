@@ -39,6 +39,10 @@ $(function() {
     });
 });
 
+$(window).load(function() { 
+hideFA();
+});
+
 
 
 function hideDF(){
