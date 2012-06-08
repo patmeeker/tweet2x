@@ -62,7 +62,7 @@ $('#kevin').show();
 $(document).scroll(function(){
 	var $window = $(window);
 var posNow = $window.scrollTop();
-if (posNow > 0) {
+if (posNow > 0 && posNow < 800) {
 hideFA();	
 }
 });
