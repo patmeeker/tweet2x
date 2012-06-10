@@ -3,6 +3,8 @@
 a {
 text-decoration: none;
 color: ffc700;
+position: relative;
+z-index: 3;
 }
 
 body {
