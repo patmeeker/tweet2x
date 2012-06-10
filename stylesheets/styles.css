@@ -24,7 +24,7 @@ z-index: 5;
 }
 
 #tweet {
-position:fixed;
+position:relative;
 width: 100%;
 }
 
