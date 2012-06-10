@@ -26,6 +26,7 @@ z-index: 5;
 #tweet {
 position:fixed;
 width: 100%;
+z-index:4;
 }
 
 
@@ -35,8 +36,6 @@ height: 32px;
  margin: 0;
 background-color:#ffc700;
 color: white;
-position: fixed;
-z-index:4;
 }
 
 #white {
